@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>mail suggestion</title>
+	<link rel="stylesheet" href="../mailsuggestion.css" type="text/css" />
+	<script type="text/javascript" src="jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="../jquery.mailsuggestion.min.js"></script>
+    <style>
+        .container {
+            height: 100px;
+            width: 400px;
+            margin: 0 auto;
+        }
+        #email {
+            width: 240px;
+            padding: 3px 5px;
+        }
+    </style>
+    <script type="text/javascript">
+
+        $(function(){
+            var domains = ['hotmail.com', 'gmail.com', 'yahoo.com', 'windowslive.com', 'msn.com', 'yandex.com', 'outlook.com',
+                'live.com', 'hotmail.de', 'mail.ru', 'yandex.com.tr', 'me.com', 'ymail.com', 'yahoo.co.uk', 'hotmail.co.uk', 'mail.com',
+                'hotmail.fr', 'yahoo.de', 'tnn.net', 'icloud.com', 'live.de', 'thy.com', 'istanbul.com', 'vodafone.com', 'rocketmail.com', 'facebook.com',
+                'sabanciuniv.edu', 'live.nl', 'itu.edu.tr', 'ku.edu.tr', 'aol.com', 'hacettepe.edu.tr', 'metu.edu.tr', 'pepsico.com',
+                'citi.com', 'teknosa.com', 'yahoo.fr', 'hotmail.it', 'vw.com', 'carrefour.com', 'lcwaikiki.com', 'yandex.ru'
+            ];
+
+            $('#email').suggestMail(domains);
+        })
+
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <label>Email</label>
+        <input id="email" type="text" name="email"/>
+    </div>
+
+
+    <pre>
+                var domains = [
+                    'hotmail.com', 'gmail.com', 'yahoo.com', 'windowslive.com', 'msn.com', 'yandex.com', 'outlook.com',
+                    'live.com', 'hotmail.de', 'mail.ru', 'yandex.com.tr', 'me.com', 'yandex.ru', 'carrefour.com'
+                    'ymail.com', 'yahoo.co.uk', 'hotmail.co.uk', 'mail.com', 'hotmail.fr', 'yahoo.de', 'tnn.net',
+                    'icloud.com', 'live.de', 'thy.com', 'istanbul.com', 'vodafone.com', 'rocketmail.com', 'facebook.com',
+                    'sabanciuniv.edu', 'live.nl', 'itu.edu.tr', 'ku.edu.tr', 'aol.com', 'hacettepe.edu.tr', 'metu.edu.tr',
+                    'pepsico.com', 'citi.com', 'teknosa.com', 'yahoo.fr', 'hotmail.it', 'vw.com'
+                ];
+
+                $('#email').suggestMail(domains);
+    </pre>
+
+</body>
+</html>
